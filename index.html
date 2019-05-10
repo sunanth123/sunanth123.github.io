@@ -12,21 +12,34 @@
 			.navbar {
 				margin-bottom:30px;
 			}
+
+      #name-title{
+        text-align: center;
+      }
+
+      #my-picture{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        width: 200px;
+        border-radius: 25px;
+      }
 		</style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-6">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark mb-6">
 			<a class="navbar-brand" href='#'>Portfolio</a>
 			<div class="navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href='#'>Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item dropdown">
 						<a class="nav-link" href='#'>Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href='#'>Contact</a>
+						<a class="nav-link dropdown-toggle" href='#'>Contact</a>
 					</li>
 				</ul>
 				<!-- <ul class="navbar-nav">
@@ -39,13 +52,15 @@
 				</ul> -->
 			</div>
 		</nav>
-    <div class="container">
-      <h1>Sunanth Sakthivel</h1>
+    <div class="container" id = "name-title">
+      <img src="images/sunanth.jpg" id = "my-picture">
+      <h1 style="font-weight: bold;"">Sunanth Sakthivel</h1>
+      <h4 style="color:grey;">Software Engineer</h4>
     </div>
 		<div class="jumbotron">
 			<div class="container">
 				<h1>About me...</h1>
-				<p>Started off with a bachelors in general science but felt that I wasn’t being critically challenged in terms of problem solving and I wasn’t given the freedom to explore and innovate using problem solving. So I decided to pursue a Masters in Computer Science to allow myself to experience more application based problems and be able to increase my problem solving skills. I am also extremely hardworking so once I am given a problem to solve I always put all my effort and time in finishing things properly.</p>
+				<p>Started off with a Bachelors in General Science but felt that I wasn’t being critically challenged in terms of problem solving and I wasn’t given the freedom to explore and innovate using problem solving. So I decided to pursue a Masters in Computer Science to allow myself to experience more application based problems and be able to increase my problem solving skills. I am also extremely hardworking so once I am given a problem to solve I always put all my effort and time in finishing things properly.</p>
 			</div>
 		</div>
 		<div class="container">

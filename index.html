@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
@@ -25,6 +25,27 @@
         width: 200px;
         border-radius: 25px;
       }
+
+      #contact-footer{
+        display: inline;
+        margin-left: 60px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .square {
+        float: left;
+        width: 25%;
+        padding: 5px;
+      }
+
+      .Expansion::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
 		</style>
   </head>
   <body>
@@ -94,7 +115,20 @@
 				</div>
 			</div>
 			<hr></hr>
-			<p id=footer>Contact</p>
+      <div class="Expansion">
+        <div class="square" style="background-color:#bbb">
+           <div style = "font-weight: bold;">sunanth@pdx.edu</div>
+          <p id=footer><i class="fa fa-envelope" style="font-size:15px;"> Email</i></p>
+        </div>
+        <div class="square" style="background-color:#ccc">
+          <div style = "font-weight: bold;">(503)-442-4834</div>
+          <p><i class="fa fa-phone" style="font-size:15px;"> Phone</i></p>
+        </div>
+        <div class="square" style="background-color:#ddd">
+          <a href ="https://github.com/sunanth123" style = "font-weight: bold;">@sunanth123</a>
+          <p><i class="fa fa-github" style="font-size:15px;"> Github</i></p>
+        </div>
+      </div>
 		</div>
   </body>
 </html>

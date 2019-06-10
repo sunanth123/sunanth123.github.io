@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <title></title>
+    <style type="text/css">
+
+      .bg {
+  background-image: url("http://eskipaper.com/images/hunting-wallpaper-6.jpg");
+  background-size: cover;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+body, html {
+height: 100%;
+margin: 0;
+background-color: brown;
+}
+
+      .jumbotron{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+  background-color: white;
+  background-size: 100% 100%;
+  color: white;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+}
+
+      #head_title {
+
+font: 400 50px/1.3 'Oleo Script', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+margin-left:30px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.banner{
+  height: 400px;
+  background-image: url("https://cdn1.medicalnewstoday.com/content/images/articles/319/319846/brain-network.jpg");
+}
+
+h3{
+  text-decoration: underline;
+  color: grey;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#stamp{
+  font-weight: bold;
+  margin-left:30px;
+  color:grey;
+}
+
+#first{
+  margin-left:30px;
+  color:grey;
+  margin-right: 30px;
+}
+#second{
+  margin-left:30px;
+  color:grey;
+  margin-right: 30px;
+}
+#third{
+  margin-left:30px;
+  color:grey;
+  margin-right: 30px;
+}
+#fourth{
+  margin-left:30px;
+  color:grey;
+  margin-right: 30px;
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="bg">
+          <a href="https://sunanth123.github.io/" class="btn btn-warning" role="button">&larr; Back to Portfolio</a>
+          <div class="container-fluid">
+            <div class="jumbotron">
+              <h1 id = head_title>Sunanth's Blog</h1>
+              <div class = "banner"></div>
+              <h3>My first full-stack project</h3>
+              <p id = "stamp">by Sunanth on Jun 9th</p>
+              <p id = "first">Overall the final project for CS565 went very smoothly and was a very good experience to apply a lot of the technologies used in class (especially those used in the homework assignments). The stack used in this project involved using jquery, moment and bootstrap libraries for the front end. The backend involved express, path, body-parse, socket.io, https, and @google/maps. The backend essentially was responsible for making the api calls that are requested by the clients; api calls used included: google maps, places, and openweathermap. Requests were made and satisfied using socket emits between the front end and back end (server/client relationship). It was fortunate that most of the core features we planned to implement for the final project ended up working out successfully. The API’s that we used were very straightforward and not a hassle to use, and the homework exercises really helped in the process of adapting and learning how to use new technologies on the fly. </p>
+              <p id = "second"> The features that we ended up implementing successfully for this project includes: searching for hikes (using geolocation to determine current location or searching specific hikes using general phrases); searching for hikes in default locations such as Portland and Seattle; Display all the results within a certain distance radius; Dynamic change of google maps based on the selection of the hike made by the user; displaying the specific weather and conditions found in selected hiking destination; and a search criteria that persist when the user returns to the search page.</p>
+
+              <p id = "third">While working on this project there were a few issues that we ran into which included the following: Sending information from the home page to the results page was very frustrating. We were having trouble with dealing with the asynchronous nature of the weather results page requesting information from the backend server before the server was able to perform the api calls to supply this information. At first we were attempting to send information from the home page to the result page which would then request services from the server--the problem was we needed an effective way for emits to block until desired requests were made. After experimenting with callbacks with no avail, we decided to simply use local storage variables that could be used across .js files. Another issue we were having at the start of the project was determining how our backend would relay results. At first we used the POST method to send data from the html file to the server however had trouble when trying to send back data to the html file in the form that we wanted. Before we got too deep into it, we decided to switch up our design to use socket.io which turned out to be much better. Using socket we were able to emit json data back and forth between the server and client in the exact data format we wanted.</p>
+
+              <p id = "fourth">If more time was given I am hoping to implement the following: an option to select multiple hikes and comparing their weather to provide the most optimal hiking choice; A history of selected hikes for users that would help with future searches; an autocomplete and guess feature for searches using ajax; lastly adding some sort of database to store hikes from authenticated users would make the experience with the website much more personal. </p>
+
+          </div>
+
+        </div>
+
+
+  </body>
+</html>

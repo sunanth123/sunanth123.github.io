@@ -1,2 +1,2 @@
 # sunanth.github.io
-portfolio
+self-made portfolio about myself
